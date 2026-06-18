@@ -16,10 +16,19 @@
 <body>
 <?php
     $name = "Dark Matter";
-    $read = true;
+    $read = false;
+    if($read == true){
+
 ?>
     <h1>
         You have read "<?php echo $name; ?>."
     </h1>
+<?php
+    }else {
+?>
+            <h1>
+                You have not read "<?php echo $name; ?>.";
+            </h1>
+<?php } ?>
 </body>
 </html>
