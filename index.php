@@ -17,18 +17,15 @@
 <?php
     $name = "Dark Matter";
     $read = false;
-    if($read == true){
+    if($read) {
+        $message = "You have read $name";
+    } else {
+        $message = "You have NOT read $name";
+    }
 
 ?>
-    <h1>
-        You have read "<?php echo $name; ?>."
-    </h1>
-<?php
-    }else {
-?>
-            <h1>
-                You have not read "<?php echo $name; ?>.";
-            </h1>
-<?php } ?>
+<h1>
+    <?= $message ?>
+</h1>
 </body>
 </html>
