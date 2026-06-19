@@ -16,7 +16,7 @@
 <body>
 <?php
     $name = "Dark Matter";
-    $read = false;
+    $read = true;
     if($read) {
         $message = "You have read $name";
     } else {
@@ -27,5 +27,23 @@
 <h1>
     <?= $message ?>
 </h1>
+
+<?php
+    $books = [
+        "Do Androids Dream of Electric Sheep",
+        "The Langoliers",
+        "Hail Mary",
+        "Animal Farm"
+    ];
+?>
+<h2>Recommended Books</h2>
+<ul>
+    <?php
+
+    foreach($books as $book) {
+        echo "<li>$book</li>";
+    }
+    ?>
+</ul>
 </body>
 </html>
